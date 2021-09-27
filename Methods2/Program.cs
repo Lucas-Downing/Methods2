@@ -17,6 +17,8 @@ namespace Methods2
             score = 0;
             health = 100;
 
+            Title();
+
             ShowHUD();
             TakeDamage(28);
             ShowHUD();
@@ -35,6 +37,7 @@ namespace Methods2
             Console.WriteLine("Player has taken " + damage + " damage");
             Console.WriteLine("--------------");
             Console.WriteLine();
+            Console.ReadKey(true);
         }
         static void ShowHUD()
         {
@@ -46,6 +49,21 @@ namespace Methods2
             Console.WriteLine();
             Console.WriteLine("[=================]");
             Console.WriteLine();
+            Console.ReadKey(true);
+        }
+
+        static void Title()
+        {
+            Console.WriteLine("++++++++++++++++++++++++");
+            Console.WriteLine();
+            Console.WriteLine("Welcome to replace_name!");
+            Console.WriteLine();
+            Console.WriteLine("you know actual ");
+            Console.WriteLine("games exist right?");
+            Console.WriteLine("++++++++++++++++++++++++");
+            Console.WriteLine();
+
+            Console.ReadKey(true);
         }
     }
 }
